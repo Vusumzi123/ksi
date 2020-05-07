@@ -1,0 +1,5 @@
+@mixin dropShadow($x, $y, $r, $s, $color) {
+    -webkit-box-shadow: $x $y $r $s $color !important;
+    -moz-box-shadow: $x $y $r $s $color !important;
+    box-shadow: $x $y $r $s $color !important;
+}

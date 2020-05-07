@@ -1,0 +1,16 @@
+<div class="description-card">
+    <div class="card-container d-flex flex-column align-items-center justify-content-between" (click)="onCardClick( cardData.url )">
+        <div class="growing-circle" [ngClass]="cardData.type">&nbsp;</div>
+        <img [src]="cardData.logo" class="logo" alt="icono administracion ksi">
+        <div class="title">
+            <h1 class="h4 text-center">{{cardData.title}}</h1>
+        </div>
+        <div class="body">
+            <p class="text-center">{{cardData.body}}</p>
+        </div>
+        <div class="action">
+            <button class="action-button" [ngClass]="cardData.type">Visitar</button>
+        </div>
+        <img [src]="cardData.icon" class="icon" alt="Administración de Inmuebles icono">
+    </div>
+</div>

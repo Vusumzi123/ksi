@@ -1,0 +1,6 @@
+<app-navbar>
+</app-navbar>
+<div [@pageTransition]=" (transitionState$ | async).isPageVisible ? 'end' : 'start'  " class="root-content">
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</div>

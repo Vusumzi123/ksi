@@ -1,0 +1,40 @@
+<div class="section login-section vh-100">
+    <div class="container login-container d-flex flex-column justify-content-center align-items-center h-100">
+        <div class="col-md-4 content-center ml-auto mr-auto">
+            <div class="card card-login card-plain">
+                <form ngNoForm action="http://462900ea.ngrok.io/proxy/casandra" #form class="form ng-untouched ng-pristine ng-valid" target="_blank" method="post" novalidate="">
+
+                    <div class="header header-info text-center">
+                        <div class="logo-container d-block mx-auto"><img class="my-5" alt="" src="assets/icons/KSI_Imagotipo.svg"></div>
+                    </div>
+                    <div class="content">
+                        <div class="input-group form-group-no-border input-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-user-circle"></i>
+                                </span>
+                            </div>
+                            <input class="form-control h-100" placeholder="Usuario" name="U" type="text">
+                        </div>
+                        <div class="input-group form-group-no-border input-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-key"></i>
+                                </span>
+                            </div>
+                            <input class="form-control h-100" placeholder="contraseña" name="P" type="password">
+                        </div>
+                    </div>
+                    <div class="footer text-center">
+                        <button type="submit" class="btn btn-info btn-round btn-lg btn-block" (click)="form.submit()">Acceder</button>
+                    </div>
+                    <div class="text-center">
+                        <h6>
+                            <a class="link text-info white-link" href="#">Olvidé mi contraseña!</a>
+                        </h6>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

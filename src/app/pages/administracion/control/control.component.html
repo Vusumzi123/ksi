@@ -1,0 +1,30 @@
+<div class="section control-section mt-4">
+    <div class="container control-container">
+        <h1 class="h2 text-center">
+            OFRECEMOS CONTROL <br> ESTRATÉGICO DE LOS INMUEBLES
+        </h1>
+        <p class="text-center light-text">
+            el cual incluye una óptima relación con condóminos y proveedores.
+        </p>
+        <p class="text-center light-text">
+            Asesoramos a nuestros clientes en todas nuestras áreas de especialización:
+        </p>
+        <div class="row admin-icons my-5">
+            <div class="col-6 col-sm-3 mb-4 admin-icons-col mx-auto" *ngFor="let icon of icons">
+                <img [src]="icon.imgPath" class="d-block mx-auto" alt="admin icon">
+                <p class="mx-auto text-center">{{icon.label}}</p>
+            </div>
+        </div>
+        <div class="control-banner row mt-5 shadowed">
+            <div class="col-sm-12 col-md-6 p-5 d-flex flex-column justify-content-center align-items-center">
+                <p class="text-center">
+                    En KSI contamos con un equipo altamente competitivo que te ayudara a llevar la administración de tu inmueble.
+                </p>
+                <p class="text-center">
+                    Si estas interesado en nuestros servicios, no dudes en comunicarte con nosotros.
+                </p>
+                <a type="button" role="button" (click)="onContactarClick()" class="btn btn-lg btn-info btn-round inline-block mx-auto">Contactar</a>
+            </div>
+        </div>
+    </div>
+</div>

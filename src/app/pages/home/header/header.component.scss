@@ -1,0 +1,21 @@
+.header {
+    background-image: url(src/assets/images/buildings-690195.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-container {
+    height: 100%;
+    .logo {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-container {
+        .logo {
+            width: 40%;
+        }
+    }
+}

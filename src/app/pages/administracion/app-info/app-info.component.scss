@@ -1,0 +1,28 @@
+.app-info-section {
+    background-image: url(src/assets/images/Cenefa.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (min-width: 1200px) {
+        background-size: contain;
+    }
+    .app-info-container {
+        .app-info-text {
+            color: white;
+            p {
+                font-size: small;
+                @media (min-width: 576px) {
+                    font-size: medium;
+                }
+            }
+        }
+        .store-buttons {
+            a {
+                img {
+                    width: 6rem;
+                }
+                margin-right: 1.2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.description-text-container {
+    .description-text {
+        max-width: 630px;
+        margin: auto;
+        margin-top: 3rem;
+        font-size: large;
+        opacity: .7;
+    }
+    .bold {
+        font-weight: bold;
+    }
+}
+
+.description-cards {
+    background-color: #f3f3f3;
+}
+
+@media (min-width: 992px) {
+    .description-section {
+        height: 30vh;
+    }
+    .description-cards {
+        min-height: 70vh;
+    }
+}

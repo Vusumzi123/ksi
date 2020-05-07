@@ -1,0 +1,20 @@
+.control-section {
+    .control-container {
+        p {
+            font-size: medium;
+        }
+        .admin-icons {
+            .admin-icons-col {
+                img {
+                    width: 100px;
+                }
+                p {
+                    font-size: medium;
+                }
+            }
+        }
+        .control-banner {
+            background-image: url(src/assets/images/Banner-Administracion.png);
+        }
+    }
+}

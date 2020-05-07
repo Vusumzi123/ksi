@@ -1,0 +1,16 @@
+<div class="section description-section">
+    <div class="container description-text-container">
+        <p class="text-center description-text">
+            Kapital Soluciones Inmobiliarias es una empresa integral en el sector inmobiliario abarcando sus 3 principales áreas en las cuales somos <br> <span class="bold">#ExpertosInmobiliarios</span> y <span class="bold">#BrindamosSoluciones</span>:
+        </p>
+    </div>
+</div>
+<div class="section description-cards">
+    <div class="container">
+        <div class="row" appApearAnimation>
+            <div class="col-md-6 col-lg-4 mx-auto" *ngFor="let cardData of cardsData">
+                <app-card [cardData]="cardData"></app-card>
+            </div>
+        </div>
+    </div>
+</div>

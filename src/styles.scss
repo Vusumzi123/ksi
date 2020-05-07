@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+/* text */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.light-text {
+    opacity: 0.6;
+}
+
+.text-white {
+    color: white !important;
+    &.btn:hover {
+        text-shadow: 0px 0px 12px #CECECE;
+    }
+}
+
+a.white-link {
+    color: white !important;
+}
+
+
+/* Elements */
+
+.hr {
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 80%;
+    opacity: 0.3;
+    border-bottom: 2px solid white;
+}
+
+.btn,
+.nav-link {
+    cursor: pointer !important;
+}
+
+.btn.btn-info {
+    &:not([href]) {
+        color: white;
+    }
+    &:hover {
+        color: white!important;
+    }
+}
+
+.modal-dialog {
+    margin-top: 5rem;
+    color: white;
+    .modal-content {
+        border-radius: 5px;
+        background-color: #e2771c;
+    }
+}
+
+
+/* Grid */
+
+.vh-30 {
+    height: 30vh;
+}
+
+.vh-40 {
+    height: 40 vh;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+.vh-60 {
+    height: 60vh;
+}
+
+.vh-70 {
+    height: 70vh;
+}

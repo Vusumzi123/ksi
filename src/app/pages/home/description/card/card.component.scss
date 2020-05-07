@@ -1,0 +1,84 @@
+.description-card {
+    .card-container {
+        min-height: 80vh;
+        margin: 1.2rem;
+        cursor: pointer;
+        overflow: hidden;
+        padding: 2rem;
+        .growing-circle {
+            border-radius: 50%;
+            opacity: 0.2;
+            position: relative;
+            transform: translateY(18rem) scale(60);
+            width: 4rem;
+            height: 4rem;
+            /* transition: transform 600ms ease-in-out; */
+            &.admin {
+                background-color: #293ea8;
+            }
+            &.ventarenta {
+                background-color: #e2771c;
+            }
+            &.desarrollos {
+                background-color: #4d8548;
+            }
+        }
+        .logo {
+            width: 9rem;
+            position: absolute;
+            top: 0;
+        }
+        .action {
+            .action-button {
+                display: block;
+                margin: auto;
+                border: 0;
+                background-color: transparent;
+                font-size: 1.5rem;
+                font-weight: 500;
+                &.admin {
+                    color: #293ea8;
+                }
+                &.ventarenta {
+                    color: #e2771c;
+                }
+                &.desarrollos {
+                    color: #4d8548;
+                }
+            }
+        }
+        .icon {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .description-card {
+        padding: 0.3rem;
+        padding-top: 3rem;
+        margin: 0;
+        .card-container {
+            &:hover {
+                .growing-circle {
+                    transform: scale(16);
+                }
+            }
+            &:active {
+                .growing-circle {
+                    opacity: 0.7;
+                }
+                .action {
+                    .action-button {
+                        color: black !important;
+                    }
+                }
+            }
+            min-height: 430px;
+            .growing-circle {
+                transform: translateY(18rem) scale(0.01);
+                transition: transform 600ms ease-in-out;
+            }
+        }
+    }
+}
